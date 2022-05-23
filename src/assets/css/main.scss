@@ -1,0 +1,48 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "contact-book.scss";
+@import "search.scss";
+@import "contact-person.scss";
+@import "add-contact.scss";
+@import "contact-detail.scss";
+
+.content-wrapper {
+	max-width: 380px;
+	min-height: 520px;
+	width: 100%;
+	background: $bg;
+	box-shadow: $shadow;
+	display: flex;
+	flex-direction:column;
+	align-items:flex-start;
+	box-sizing:border-box;
+	padding:20px;
+	position: relative;
+	overflow: hidden;
+	transition: all 400ms;
+	&:after {
+		content: "";
+		display:block;
+		position: absolute;
+		width: 100%;
+		height: 20px;
+		background: white;
+		bottom:0;
+		left:0;
+		z-index: 0;
+	}
+}
+
+//component transactions
+.component-enter-active, .component-leave-active {
+  transition: all 200ms ease-in;
+
+}
+.component-leave-to {
+  transform: translateX(-500px);
+  opacity: 0;
+}
+.component-enter {
+	opacity: 0;
+	transform: translate(500px);
+}

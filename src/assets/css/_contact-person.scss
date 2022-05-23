@@ -1,0 +1,36 @@
+.contact-person-wrapper {
+	display: flex;
+	align-items:center;
+	width: 100%;
+	height: 50px;
+	background: white;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	border-radius: 8px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.contact-person-img {
+	width: 50px;
+	height: 100%;
+	object-fit:cover;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.contact-person-info {
+	padding-left: 15px;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact-person-name {
+	text-align: left;
+	color:#0a99f2;
+	font-size: 15px;
+}
+.contact-person-phone {
+	color: #b8b9bb;
+	padding-top: 4px;
+	font-size: 15px;
+}

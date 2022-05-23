@@ -1,0 +1,76 @@
+.contact-book-wrapper {
+	width: 100%;
+	height: 430px;
+	background: $bg;
+	display: flex;
+	flex-direction:column;
+	align-items:flex-start;
+	box-sizing:border-box;
+	position: relative;
+}
+.contact-book-title {
+	font-size: 13px;
+	color:$text;
+	padding-bottom: 20px;	
+}
+
+.contact-book-list {
+	margin-top: 35px;
+	width:100%;
+	position: relative;
+	box-sizing: border-box;
+    padding: 5px;
+	overflow-y:scroll;
+  	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none; 
+	&::-webkit-scrollbar {
+		display:none;
+	}
+
+}
+
+.add-contact-icon {
+	width: 35px;
+	position: absolute;
+	bottom: 5px;
+	cursor: pointer;
+	transition:all 200ms;
+	left:0;
+	right: 0;
+	margin:0 auto;
+	z-index: 2;
+	&:hover {
+		transform:rotate(360deg);
+
+	}
+}
+.save {
+	width: 30px;
+	bottom:7px;
+}
+.delete {
+	width: 30px;
+	left: 20px;
+}
+.edit {
+	width: 30px;
+	right: 50px;
+}
+
+.back-link {
+	cursor: pointer;
+}
+
+.list-enter-active, .list-leave-active {
+  transition: all 600ms;
+}
+.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(500px);
+}
+
+
+.no-records {
+	color:#cacaca;
+	font-size: 13px;
+}

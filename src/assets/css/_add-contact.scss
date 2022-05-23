@@ -1,0 +1,61 @@
+.add-contact {
+	width: 100%;
+	height: 100%;
+	img {
+		width: 100px;
+		height: 100px;
+		border-radius: 100%;
+		object-fit:cover;
+		margin-bottom: 40px;
+	}
+}
+.form-wrapper {
+	display: flex;
+	flex-direction:column;
+	label {
+		display: flex;
+		flex-direction:column;
+		align-items:flex-start;
+		margin-bottom:25px;
+		font-size: 11px;
+		color:$blue;
+		font-weight: bold;
+		transition:height 1s;
+		input {
+			width: 100%;
+			border:none;
+			border-bottom: 2px solid $text;
+			font-size: 16px;
+			color:$text;
+			margin-top: 4px;
+			outline:none;
+			background:transparent;
+		&.error-input {
+				border-color: red;
+			}
+		}
+	}
+}
+
+.error {
+	font-size: 11px;
+	color:red;
+	margin-top: 10px;
+}
+
+.error-msg-enter-active, .error-msg-leave-active {
+  transition: all 600ms;
+}
+.error-msg-enter, .error-msg-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(5px);
+}
+
+
+
+.submit-status {
+	font-size: 11px;
+    color: #0a99f2;
+    font-weight: bold;
+    margin-bottom:23px;
+}
